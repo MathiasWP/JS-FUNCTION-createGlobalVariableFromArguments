@@ -19,16 +19,22 @@ function createGlobalVariableFromArguments() {
   // Store the value of new variable (required argument)
   let value = _.pop();
 
+  // Error function
+  const error = () => {
+    throw new Error('Invalid parameter input');
+  };
+
   try {
+    // Check if first variable starts with number (because variables cannot start as number)
+    if (!isNaN(parseInt(_[0]))) {
+      error();
+    }
+
     // Loop through all arguments used to create variable
     for (const a of _) {
-      // Check if first variable starts with number (because variables cannot start as number)
       // If first variable does not start with number, check if it contains invalid characters
-      if (
-        (_.indexOf(a) === 0 && !isNaN(parseInt(a))) ||
-        !a.match('^[A-Za-z0-9]+$')
-      ) {
-        throw Error('Invalid parameter input');
+      if (!a.match('^[A-Za-z0-9]+$')) {
+        error();
       }
     }
 
