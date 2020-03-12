@@ -1,4 +1,4 @@
-# JS-FUNCTION-createGlobalVariableFromArguments
+# JS-FUNCTION: createGlobalVariableFromArguments
 The most useless and stupid function i've created. That's why chose to upload it.
 
 ```javascript
