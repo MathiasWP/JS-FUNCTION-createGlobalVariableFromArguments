@@ -1,6 +1,5 @@
 # JS-FUNCTION: createGlobalVariableFromArguments
-The most useless and stupid function i've created. That's why chose to upload it.
-
+The most useless and stupid function i've created. That's why chose to upload it. If you find any use case for this, please let me know.
 ```javascript
 'use strict';
 
