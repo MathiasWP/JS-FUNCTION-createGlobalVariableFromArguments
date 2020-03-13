@@ -33,7 +33,7 @@ function createGlobalVariableFromArguments() {
     // Loop through all arguments used to create variable
     for (const a of _) {
       // Check if word contains invalid characters for creating a variable
-      if (!a.match('^[A-Za-z0-9]+$')) {
+      if (!/^\w+$/.test(a)) {
         error();
       }
     }
