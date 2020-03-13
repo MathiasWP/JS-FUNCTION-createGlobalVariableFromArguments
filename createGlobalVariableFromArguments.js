@@ -32,7 +32,7 @@ function createGlobalVariableFromArguments() {
 
     // Loop through all arguments used to create variable
     for (const a of _) {
-      // If first variable does not start with number, check if it contains invalid characters
+      // Check if word contains invalid characters for creating a variable
       if (!a.match('^[A-Za-z0-9]+$')) {
         error();
       }
