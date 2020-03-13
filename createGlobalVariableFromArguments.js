@@ -12,7 +12,7 @@ function createGlobalVariableFromArguments() {
     // If it is, extract the value and remove from arguments array
     const bool = _.pop();
 
-    // If bool is false, change connection to non-default value
+    // If bool is false, change connection to non-default value (no space between words)
     if (!bool) connection = '';
   }
 
